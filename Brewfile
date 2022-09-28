@@ -20,6 +20,7 @@ tap "buo/cask-upgrade"
 
 ### install stuffs via brew
 brew "gh"
+brew "jq"
 brew "node"
 brew "pnpm"
 brew "yt-dlp"
