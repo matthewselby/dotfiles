@@ -1,6 +1,9 @@
 ### first run https://strap.mikemcquaid.com/
 ### https://github.com/MikeMcQuaid/strap
 
+### add dotfiles GH repo
+### https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
 ### install all google fonts
 # https://gist.github.com/keeferrourke/d29bf364bd292c78cf774a5c37a791db
 
