@@ -15,6 +15,7 @@ cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
+tap "homebrew/cask-versions"
 tap "buo/cask-upgrade"
 
 
