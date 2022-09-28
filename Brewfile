@@ -5,7 +5,7 @@
 ### https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 ### install all google fonts
-# https://gist.github.com/keeferrourke/d29bf364bd292c78cf774a5c37a791db
+# curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
 
 
 ### set cask install directory to shared applications directory
