@@ -67,7 +67,7 @@ cask "propresenter"
 
 ### install mac app store apps
 brew "mas"
-mas "Fantastical", id: 435003921
+mas "Fantastical - Calendar", id: 975937182
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
