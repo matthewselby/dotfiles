@@ -1,33 +1,40 @@
 ### first run https://strap.mikemcquaid.com/
-### https://github.com/MikeMcQuaid/strap
+# https://github.com/MikeMcQuaid/strap
 
 ### add dotfiles GH repo
-### https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 ### install all google fonts
-# curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
+#  https://gist.github.com/keeferrourke/d29bf364bd292c78cf774a5c37a791db
 
 
 ### set cask install directory to shared applications directory
 cask_args appdir: "/Applications"
 
-### tap homebrew extras
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-versions"
+### homebrew taps
+tap "1password/tap"
 tap "buo/cask-upgrade"
+tap "homebrew/bundle"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
 
 
 ### install stuffs via brew
+brew "php"
+brew "composer"
 brew "gh"
 brew "jq"
+brew "python@3.11"
+brew "mackup"
+brew "mas"
 brew "node"
 brew "pnpm"
+brew "ripgrep"
+brew "trash"
 brew "yt-dlp"
 brew "wget"
-brew "mackup"
-brew "composer"
 # ffmpeg with all options
 ALL_FFMPEG_OPTIONS = `brew options ffmpeg | grep -vE '\s' | grep -- '--with-'`.gsub("--", "").split("\n")
 brew "ffmpeg", args: ALL_FFMPEG_OPTIONS
@@ -38,7 +45,7 @@ cask "gas-mask"
 cask "1Password"
 cask "alfred"
 cask "bartender"
-cask "behringer-x32-edit"
+#cask "behringer-x32-edit"
 cask "cleanmymac"
 cask "google-chrome"
 cask "imageoptim"
@@ -47,12 +54,12 @@ cask "iterm2"
 cask "rocket"
 cask "spotify"
 cask "visual-studio-code"
-cask "zoom"
+#cask "zoom"
 cask "cloudapp"
 cask "dropbox"
-cask "transmission"
+#cask "transmission"
 cask "github"
-cask "reaper"
+#cask "reaper"
 cask "notion"
 cask "transmit"
 cask "sequel-pro"
@@ -62,13 +69,19 @@ cask "focus"
 cask "logi-options-plus"
 cask "local"
 cask "local-beta"
-cask "vlc"
-cask "propresenter"
+#cask "vlc"
+#cask "propresenter"
+cask "elgato-stream-deck"
+cask "elgato-control-center"
+cask "google-drive"
+cask "insomnia"
+cask "postman"
+
 
 
 ### install mac app store apps
 brew "mas"
-mas "Fantastical - Calendar", id: 975937182
+mas "Fantastical", id: 435003921
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
@@ -85,8 +98,8 @@ mas "EasyRes", id: 688211836
 mas "Speedtest", id: 1153157709
 mas "Grammarly: Writing App", id: 1462114288
 mas "The Unarchiver", id: 425424353
-mas "Final Cut Pro", id: 424389933
-mas "Playback", id: 751755884
+#mas "Final Cut Pro", id: 424389933
+#mas "Playback", id: 751755884
 
 
 ### install fonts
