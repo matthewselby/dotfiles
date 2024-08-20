@@ -38,8 +38,8 @@ brew "trash"
 brew "yt-dlp"
 brew "wget"
 # ffmpeg with all options
-ALL_FFMPEG_OPTIONS = `brew options ffmpeg | grep -vE '\s' | grep -- '--with-'`.gsub("--", "").split("\n")
-brew "ffmpeg", args: ALL_FFMPEG_OPTIONS
+#ALL_FFMPEG_OPTIONS = `brew options ffmpeg | grep -vE '\s' | grep -- '--with-'`.gsub("--", "").split("\n")
+#brew "ffmpeg", args: ALL_FFMPEG_OPTIONS
 
 
 ### install apps
@@ -90,7 +90,7 @@ cask "docker"
 
 ### install all nerd fonts
 # brew tap homebrew/cask-fonts
-brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs -I{} brew install --cask {} || true
+#brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs -I{} brew install --cask {} || true
 
 ### install mac app store apps
 brew "mas"
