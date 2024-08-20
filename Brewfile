@@ -13,12 +13,7 @@ cask_args appdir: "/Applications"
 
 ### homebrew taps
 tap "1password/tap"
-#tap "buo/cask-upgrade"
 tap "homebrew/bundle"
-#tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-#tap "homebrew/services"
 
 ### Aggtool deps
 brew "gnuplot"
